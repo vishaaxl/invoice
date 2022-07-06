@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Invoice App
 
-## Getting Started
+![Design preview for the Invoice](./public/images/pika-2022-07-06T09_42_40.530Z.png)
 
-First, run the development server:
+# Introuction
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Hi, there! 👋
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This invoice app uses firebase firestore for managing invoives and nextjs for the front-end. You can login using your email Id and view, add, delete and update invoices.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+For this Web App, I've used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- React and Next.js with typescript (to build out the site)
+- Tailwind css (to style it)
+- Formik and Yup (to handle the forms in the site)
+- Framer Motion (for the page transitions and animations)
+- Next-auth (for authentication)
+- day-js (for parsing dates) 😁
 
-## Learn More
+## How to get this project running locally
 
-To learn more about Next.js, take a look at the following resources:
+Clone this repository and run command `npm install` in your terminal. After downloading all the packages you need to create `.env.local` file and set CLIENT_ID, CLIENT_SECRET and NEXTAUTH_SECRET. You can get these from your google developer console. Don't forget to set authorized url redirects there. 🙂
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+After setting up everything you can run `npm run dev` to run in project in dev environment! 👍
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Things I Wish I Would Have Done
 
-## Deploy on Vercel
+- Probably thought a little bit more about how to structure my styles before I started!
+- Perhaps broken down a couple of large components a little more.
+- And maybe used CSS variables to create the light/dark modes of the site (rather than styled-components' theme provider). I think it might have been a little... easier.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Invoice details screen
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Design preview for the Invoice](./public/images/pika-2022-07-06T09_43_12.072Z.png)
+
+Clicking on an Invoice will to take you to the detailed page where you can change status or delete invoice.
+
+## Outro
+
+I had a lot of learing and making this project. It still needs some code refactoring and bug fixes. Maybe I will fix them in future updates.
+
+Happy invoicing 👋

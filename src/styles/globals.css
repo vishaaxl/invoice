@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "custom";
+  font-weight: 200;
+  font-display: fallback;
+  src: url("/fonts/NTR-Regular.ttf") format("truetype");
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply select-none bg-background text-font font-custom no-scrollbar;
+  }
+}
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .wrapper {
+    @apply relative flex-grow my-0 mx-auto py-0 px-6 w-auto h-full md:max-w-[45rem] lg:max-w-[50rem];
+  }
+
+  .border-animation {
+    @apply border border-transparent hover:border-accent outline-none;
+  }
+
+  .primary-button {
+    @apply px-6 py-[0.65em] rounded-2xl text-xl sm:text-2xl hover:scale-105 transition-all hover:font-semibold cursor-pointer;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+}
