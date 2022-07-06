@@ -25,12 +25,6 @@ Clone this repository and run command `npm install` in your terminal. After down
 
 After setting up everything you can run `npm run dev` to run in project in dev environment! 👍
 
-## Things I Wish I Would Have Done
-
-- Probably thought a little bit more about how to structure my styles before I started!
-- Perhaps broken down a couple of large components a little more.
-- And maybe used CSS variables to create the light/dark modes of the site (rather than styled-components' theme provider). I think it might have been a little... easier.
-
 ## Invoice details screen
 
 ![Design preview for the Invoice](./public/images/pika-2022-07-06T09_43_12.072Z.png)
